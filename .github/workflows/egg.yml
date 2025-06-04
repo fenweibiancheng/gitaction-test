@@ -2,6 +2,6 @@ on: push
 
 jobs:
   job1:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
       - run: uname -a
