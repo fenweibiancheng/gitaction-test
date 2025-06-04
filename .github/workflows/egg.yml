@@ -1,0 +1,7 @@
+on: push
+
+jobs:
+  job1:
+    run-on: macos
+    steps:
+      - run: uname -a
