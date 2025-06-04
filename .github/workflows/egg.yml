@@ -2,6 +2,6 @@ on: push
 
 jobs:
   job1:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
-      - run: uname -a
+      - run: gcc -v
