@@ -4,4 +4,10 @@ jobs:
   job1:
     runs-on: macos-latest
     steps:
-      - run: gcc -v
+      - run: echo '#include <stdio.h>' > main.c
+      - run: echo 'int main(void) {' >> main.c
+      - run: echo 'printf("hello, macos\n");' >> main.c
+      - run: echo 'return 0;' >> main.c
+      - run: echo '}' >> main.c
+      - run: gcc main.c
+      - run: ./a.out
